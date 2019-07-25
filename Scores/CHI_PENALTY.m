@@ -37,5 +37,7 @@ for i = 1:numnodes-1
     end
     CHI2(i)=j-fine;
 end
+VAL = sum(CHI2);
+end
 
 

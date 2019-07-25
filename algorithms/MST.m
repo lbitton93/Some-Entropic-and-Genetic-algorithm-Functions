@@ -1,6 +1,9 @@
-function [MST] = MST_draft(MI,order,order_named)
-%Minimum spanning tree draft using the cheng bell liu algorithm
-%   Detailed explanation goes here
+function [MST] = MST(MI,order,order_named)
+%   Minimum spanning tree draft using the cheng-bell-liu algorithm
+%   order = ordering of vertices
+%   order_named is only neccessary if you want to plot a graph of the structure,
+%   in which case uncomment the bottom bit(i know this can be done better)
+
 [row,col] = find(MI~=0);
 edges = [row,col];
 value = MI(MI~=0);

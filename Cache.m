@@ -88,7 +88,7 @@ classdef Cache
            
             tic
             for i = 1:keysize
-            Score(i) = entropy_cond2(Dmod(i,2:K),D,states,Dmod(i,1))
+            Score(i) = entropy_cond(Dmod(i,2:K),D,states,Dmod(i,1))
             end
             toc
             Score

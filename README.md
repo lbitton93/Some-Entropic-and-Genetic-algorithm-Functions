@@ -11,6 +11,15 @@ environment, it's fairly intuitive.
 
 MATLAB
 
+## Mathsy details
+
+Here I will explain some of the commonplace function argument matrices and their representation:
+
+datavectors: A 3D matrix
+- This is a one hot encoded structure, where the i dimension represents the particular instance in the dataset
+  the j dimension represents the particular variable / node $v$ in the graph and consequently position in the adjacency 
+  matrix. The k dimension is a one-hot encoding of the state that $v$ occupies at it's given M(i,j).
+  
 ## Contributing
 
 If you guys want to test and branch that would be great as it's fairly useless to me without access to MATLAB.

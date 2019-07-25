@@ -7,7 +7,7 @@ Here are some functions that I developed whilst I was at university. I'm working
 I can't quite recall the specifics as I haven't used Matlab in a year, but there is an option to browse and add a new Path to your
 environment, it's fairly intuitive.
 
-### Prerequisites
+## Prerequisites
 
 MATLAB
 

@@ -1,6 +1,6 @@
 # Some Entropic and Genetic Algorithm Functions
 
-Here are some functions that I developed whilst I was at university. I'm working on de-cluttering as there are several functions that ended up being a dead end.
+Here are some functions that I developed whilst I was at university. Currently working on de-cluttering as there are several functions that ended up being a dead end.
 
 ## Getting Started
 

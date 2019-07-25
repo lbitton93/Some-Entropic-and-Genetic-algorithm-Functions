@@ -2,9 +2,9 @@ function [M] = MI(D,A,e,SIG)
 % Mutual information function:
 %
 % This function calculates the mutual information of a graph G from the
-% data D. It takes input MI(D,G,e,SIG). 
+% data D. It takes input MI(D,A,e,SIG). 
 % 
-% > G is an adjacency matrix of the edges:
+% > A is an adjacency matrix of the edges:
 % > D is a 3D data matrix:
 %     - rows,  nodes
 %     - columns, instances of the data

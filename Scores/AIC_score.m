@@ -3,7 +3,7 @@ Entropy = 0;
 for j = 1:size(datavectors,2)
     parents = find(M(:,j))';
  
-    Entropy = Entropy + entropy_cond3(parents,datavectors,datanumstates,j);
+    Entropy = Entropy + entropy_cond3(parents,j);
     
 end
 LL = -size(datavectors,1)*Entropy;

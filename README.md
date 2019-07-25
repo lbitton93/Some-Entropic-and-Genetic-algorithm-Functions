@@ -1,6 +1,6 @@
 # Some Entropic and Genetic Algorithm Functions
 
-Here are some functions that I developed whilst I was at university. Currently working on de-cluttering as there are several functions that ended up being a dead end.
+Here are some functions that I developed a year ago whilst I was at university. I'm currently in the process of cleaning up functions and assigning them to appropriate folders. I will then try and access Matlab to test, as there are some duplicates and superflous files.
 
 ## Getting Started
 

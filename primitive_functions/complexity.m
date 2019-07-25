@@ -1,5 +1,5 @@
 function [C] = complexity(DAG,datanumstates)
-%Complexity of a network for the scoring function
+%   Complexity of a network for the scoring function
 %   returns the network complexity, arguments are the DAG and the number of
 %   states for each node.
 Size = size(DAG,1);

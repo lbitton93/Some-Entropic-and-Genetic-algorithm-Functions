@@ -1,4 +1,4 @@
-function [Entropy] = entropy_cond3(parents,D,states,j)
+function [Entropy] = entropy_cond3(parents,datavectors,states,j)
 %Local entropy
 %   Calculates the local entropy of variable i when passed a matrix M and
 %   the data D, a correctly ordered vector containing the number of states

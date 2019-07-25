@@ -13,12 +13,17 @@ MATLAB
 
 ## Mathsy details
 
-Here I will explain some of the commonplace function argument matrices and their representation:
+Here I will explain some of the commonplace function arguments/matrices names and their representation:
 
-datavectors: A 3D matrix
+datavectors: A 3D tensor
 - This is a one hot encoded structure, where the i dimension represents the particular instance in the dataset
-  the j dimension represents the particular variable / node $v$ in the graph and consequently position in the adjacency 
-  matrix. The k dimension is a one-hot encoding of the state that $v$ occupies at it's given M(i,j).
+  the j dimension represents the particular variable / node $v$ in the graph and consequently its position in the adjacency 
+  matrix. The k dimension is a one-hot encoding of the node's state that $v$ occupies at it's given M(i,j).
+  
+datanumstates: A 1D tensor
+- This is an array that contains the number of possible states / categories for each node $v$ in the graph. It is arranged 
+  such that the ith element corresponds with the ith element in the adjacency matrix, that is to preserve the corresponding 
+  node order.
   
 ## Contributing
 

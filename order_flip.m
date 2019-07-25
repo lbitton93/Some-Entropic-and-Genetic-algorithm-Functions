@@ -10,7 +10,7 @@ M = zeros(N);
 
 for i = 1:N
     for j = i:N
-           M(i,j) =  A( O(i), O(j));   
+           M(i,j) =  A(O(i), O(j));   
     end
 end
 end

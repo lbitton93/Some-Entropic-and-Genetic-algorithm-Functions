@@ -1,2 +1,2 @@
-- entropy_cond3 is a dictionary call up function for cached entropies
+- entropy_cond3 is a dictionary call up function for cached condtional entropies
 - entropy_joint is the joint entropy, which may consequently be used to construct conditional entropies

@@ -1,5 +1,5 @@
 function [Entropy] = entropy_joint(parents,D,states,j)
-%Local entropy
+%   joint entropy between parent nodes and the child node j
 %   Calculates the local entropy of variable i when passed a matrix M and
 %   the data D, a correctly ordered vector containing the number of states
 %   for each variable, and j, which refers to the particular variable

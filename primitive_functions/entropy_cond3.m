@@ -1,13 +1,9 @@
-function [Entropy] = entropy_cond3(parents,datavectors,states,j)
-%Local entropy
-%   Calculates the local entropy of variable i when passed a matrix M and
-%   the data D, a correctly ordered vector containing the number of states
-%   for each variable, and j, which refers to the particular variable
-%
-%   Note that there is a slight positive bias in the probability, thus
-%   entropy, such that log P results in defined behaviour. It may be worth
-%   experimenting with this.
-%
+function [Entropy] = entropy_cond3(parents,j)
+% Conditional entropy function which calls up from the 
+% joint entropy dictionary 'Dictor4'. This needs to be 
+% improved by passing the dictionary in, or at least 
+% a string to its location.
+
 
 global Dictor4;
 if size(parents,2) == 0 
@@ -23,8 +19,6 @@ else
     Dictor4(keypar);
     Entropy = Dictor4(keyall)-Dictor4(keypar);
 end
-
-
 
 end
 

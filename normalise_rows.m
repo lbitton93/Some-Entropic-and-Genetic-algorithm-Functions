@@ -1,6 +1,6 @@
 function [Anorm] = normalise_rows(A)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+%   Normalizes matrix A along it's rows. Useful for Probabilistic Markov Chains
+
 N = size(A,1);
 sumeri= size(N);
 

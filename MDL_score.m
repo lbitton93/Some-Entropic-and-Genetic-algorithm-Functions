@@ -1,4 +1,9 @@
 function [MDL] = MDL_score(M,datavectors,datanumstates)
+% A function to calculate the Minimum Description Length score
+% M is our graph's adjacency matrix
+% datavectors is 
+% datanumstates is
+
 Entropy = 0;
 for j = 1:size(datavectors,2)
     parents = find(M(:,j))';

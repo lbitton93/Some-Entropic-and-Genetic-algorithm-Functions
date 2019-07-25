@@ -1,24 +1,25 @@
-function [VAL] = CHI_PENALTY(parents,j,states,confidence)
+function [VAL] = CHI_PENALTY(parents,j,datanumstates,confidence)
 
 % Calculates the maximum CHI penalty factor for the MIT score
 %  Inputs (parents, child, number of states array, chi test confidence)
+
 numnodes = size(parents,2)+1;
 parents = sort(parents,'descend');
 ri = 1;
-BASE = states(j)-1;
+BASE = datanumstates(j)-1;
 DOF = 0;
 v(1:numnodes-1) = 0;
 
 % calculates degrees of freedom for each chi term
 for i = 1:numnodes-1
-    rik = states(parents);
+    rik = datanumstates(parents);
     rik(i) = [];
     
     if i>1
         ri= prod(rik(1:i-1));
     end
-    v(i)=BASE*(states(parents(i))-1)*ri;
-    DOF = DOF + BASE*(states(parents(i))-1)*ri;    
+    v(i)=BASE*(datanumstates(parents(i))-1)*ri;
+    DOF = DOF + BASE*(datanumstates(parents(i))-1)*ri;    
 end
 % BISECTION SEARCH FOR OUR MAXIMAL CHI CONSTANT VALUES
 

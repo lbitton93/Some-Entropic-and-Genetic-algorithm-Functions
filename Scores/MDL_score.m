@@ -1,4 +1,4 @@
-function [MDL] = MDL_score(M,datavectors,datanumstates)
+function [SCORE] = MDL_score(M,datavectors,datanumstates)
 % A function to calculate the Minimum Description Length score
 % M is our graph's adjacency matrix
 % datavectors is 
@@ -10,6 +10,6 @@ for j = 1:size(datavectors,2)
     Entropy = Entropy + entropy_cond3(parents,datavectors,datanumstates,j);  
 end
 LL = -size(datavectors,1)*Entropy;
-MDL = LL - 0.5*log2(size(datavectors,1))*complexity(M,datanumstates);
+SCORE = LL - 0.5*log2(size(datavectors,1))*complexity(M,datanumstates);
 
 end

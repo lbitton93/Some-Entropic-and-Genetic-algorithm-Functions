@@ -1,13 +1,7 @@
 function [Entropy] = entropy_joint(parents,datavectors,datanumstates,j)
-%   joint entropy between parent nodes and the child node j
-%   Calculates the local entropy of variable i when passed a matrix M and
-%   the data D, a correctly ordered vector containing the number of states
-%   for each variable, and j, which refers to the particular variable
-%
-%   Note that there is a slight positive bias in the probability, thus
-%   entropy, such that log P results in defined behaviour. It may be worth
-%   experimenting with this.
-%
+% The joint entropy between parent nodes and the child node j
+% Note that there is a slight positive bias in the probability as we take the minimum 
+% count as 1 to ensure defined behaviour. (see line 36)
 
 numnodes = size(parents,2) + 1;
 

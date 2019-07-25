@@ -24,7 +24,13 @@ Here I will explain some of the commonplace function arguments/matrices names an
 - This is an array that contains the number of possible states / categories for each node $v$ in the graph. It is arranged 
   such that the ith element corresponds with the ith element in the adjacency matrix, that is to preserve the corresponding 
   node order.
-  
+
+### Dictionary structure and functions
+
+Since there is a lot of computation required to score each graph, I stored the results for different scoring regimes applied locally to all 2,3,4 vertex configurations, such that they can be called from memory. Obviously this makes the search way faster, at the expense of a days compiling in advance. Consequently, functions that call such sub functions can either use the dictionary version or the actual computation. Rather grotesquely I have just been swapping between each sub- function within the super function depending on my requirements. Hopefully if I get access to MATLAB again I can add an extra few args to the super functions such that this function call management is dealt with internally.
+
+#### Function list with their type 
+
 ## Contributing
 
 If you guys want to test and branch that would be great as it's fairly useless to me without access to MATLAB.

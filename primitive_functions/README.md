@@ -1,3 +1,3 @@
 - entropy_cond3 is a dictionary call up function for cached condtional entropies
 - entropy_joint is the joint entropy, which may consequently be used to construct conditional entropies as can be found in the conditional functions.
-- MI and mutual_info are BOTH the same mutual information function, but implemented in slightly different ways. I cannot remember the order but the second one I made was faster. I will test this when I get access to matlab.
+

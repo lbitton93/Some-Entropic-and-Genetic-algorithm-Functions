@@ -27,7 +27,7 @@ Here I will explain some of the commonplace function arguments/matrices names an
 
 ### Dictionary structure and functions
 
-Since there is a lot of computation required to score each graph, I stored the results for different scoring regimes applied locally to all 2,3,4 vertex configurations, such that they can be called from memory. Obviously this makes the search way faster, at the expense of a days compiling in advance. Consequently, functions that call such sub functions can either use the dictionary version or the actual computation. Rather grotesquely I have just been swapping between each sub- function within the super function depending on my requirements. Hopefully if I get access to MATLAB again I can add an extra few args to the super functions such that this function call management is dealt with internally.
+Since there is a lot of computation required to score each graph, I stored the results for joint entropies all 2,3,4 vertex configurations, such that they can be called from memory. Obviously this makes the search way faster, at the expense of a days compiling in advance. Consequently, functions that call such sub functions can either use the dictionary version or the actual computation. Rather grotesquely I have just been swapping between each sub- function within the super function depending on my requirements. Hopefully if I get access to MATLAB again I can add an extra few args to the super functions such that this function call management is dealt with internally.
 
 #### Function list with their type 
 

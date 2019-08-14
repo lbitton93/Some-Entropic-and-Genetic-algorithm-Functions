@@ -21,7 +21,7 @@ Here I will explain some of the commonplace function arguments/matrices names an
   matrix. The k dimension is a one-hot encoding of the node's state that occupies at it's given M(i,j).
   
 'datanumstates' : A 1D tensor
-- This is an array that contains the number of possible states / categories for each node $v$ in the graph. It is arranged 
+- This is an array that contains the number of states / categories for each node in the graph. It is arranged 
   such that the ith element corresponds with the ith element in the adjacency matrix, that is to preserve the corresponding 
   node order.
 

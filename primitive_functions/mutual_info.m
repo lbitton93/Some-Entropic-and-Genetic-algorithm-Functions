@@ -1,4 +1,4 @@
-function [MIreturn] = mutual_info(parents,D,states,j)
+function [MIreturn] = mutual_info(parents,datavectors,states,j)
 %Local entropy
 %   Calculates the local entropy of variable i when passed a matrix M and
 %   the data D, a correctly ordered vector containing the number of states
@@ -20,7 +20,7 @@ else
     Nodes =[j,parents];
     MAX = [states(j),states(parents)];
     c = ones(1,numnodes);
-    Size = size(D,1);
+    Size = size(datavectors,1);
     stop = 0;
     run = 1;
     H_all = 0;
@@ -40,16 +40,16 @@ else
         end
         
         strips_xi = zeros(1,Size);
-        strips_xi(:) = D(:,Nodes(1),c(1));
+        strips_xi(:) = datavectors(:,Nodes(1),c(1));
         
         strips_all = zeros(numnodes,Size);
         for z = 1:numnodes
-            strips_all(z,:) = D(:,Nodes(z),c(z));
+            strips_all(z,:) = datavectors(:,Nodes(z),c(z));
         end
         
         strips_parents = zeros(numnodes-1,Size);
         for z = 1:numnodes-1
-            strips_parents(z,:) = D(:,Nodes(z+1),c(z+1));
+            strips_parents(z,:) = datavectors(:,Nodes(z+1),c(z+1));
         end
         if numnodes ==2
             Nij = 1 + sum(strips_parents);

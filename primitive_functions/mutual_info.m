@@ -1,4 +1,4 @@
-function [MIreturn] = mutual_info(parents,datavectors,states,j)
+function [MIreturn] = mutual_info(parents,datavectors,datanumstates,j)
 %Local entropy
 %   Calculates the local entropy of variable i when passed a matrix M and
 %   the data D, a correctly ordered vector containing the number of states
@@ -18,7 +18,7 @@ else
     % make a node array including the node j, also a node of their associated
     % number of states MAX. c is a counter array
     Nodes =[j,parents];
-    MAX = [states(j),states(parents)];
+    MAX = [datanumstates(j),datanumstates(parents)];
     c = ones(1,numnodes);
     Size = size(datavectors,1);
     stop = 0;

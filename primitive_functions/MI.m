@@ -1,4 +1,4 @@
-function [M] = MI(D,A,e,SIG)
+function [M] = MI(datavectors,A,e,SIG)
 % Mutual information function:
 %
 % This function calculates the mutual information of a graph G from the
@@ -15,8 +15,8 @@ function [M] = MI(D,A,e,SIG)
 %     pass a 1 or 0 value depending on wether you wish to divide the
 %     mutual information by the joint entropy.
 
-N = size(D,2);
-Entries = size(D,1);
+N = size(datavectors,2);
+Entries = size(datavectors,1);
 M = zeros(N);
 count = 0;
 
@@ -40,8 +40,8 @@ for i = 1:N
 
                 for k = 1:Entries
                    
-                    x = D(k,i,i2);
-                    y = D(k,j,j2);
+                    x = datavectors(k,i,i2);
+                    y = datavectors(k,j,j2);
                     
                     if (x + y) == 2
                         px(i2) = px(i2) + 1;

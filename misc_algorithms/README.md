@@ -1,2 +1,2 @@
 ## MST
-- minimum spanning tree built upon the cheng-bell-liu algorithm
+- minimum spanning tree built upon the cheng-bell-liu algorithm - verified by me
